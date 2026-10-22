@@ -9,9 +9,9 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse
 
 from evaluation import Evaluator
-from .matcher import FAQMatcher, MODEL_NAME
-from .repository import CSVFAQRepository, FAQ
-from .schemas import EvaluationRequest, MatchRequest, MatchResponse
+from matcher import FAQMatcher, MODEL_NAME
+from repository import CSVFAQRepository, FAQ
+from schemas import EvaluationRequest, MatchRequest, MatchResponse
 
 ROOT = Path(__file__).resolve().parent
 
