@@ -1,0 +1,107 @@
+user_query,expected_faq_id
+Can you show me the latest location of my shipment?,ORD001
+I need to follow my online order,ORD001
+Where do I see the courier tracking details?,ORD003
+I cannot find the tracking code for my package,ORD003
+The tracking page has been stuck for two days,ORD004
+Why is there no new update on my shipment?,ORD004
+"The courier says delivered, but nothing arrived at my house",ORD005
+My parcel is marked delivered and I don't have it,ORD005
+Can I follow a purchase as a guest?,ORD006
+I checked out without signing in. How can I track it?,ORD006
+Where can I see the progress of my latest purchase?,ORD007
+What does it mean when the seller has shipped my package?,ORD008
+My order is with the courier and says out for delivery. What does that mean?,ORD009
+Can you send me shipment progress notifications?,ORD010
+What is the process for sending a purchase back?,RET001
+I bought the wrong item and want to return it,RET001
+How long after purchase can I send an item back?,RET003
+What is the return window for an order?,RET003
+Can I send back an item after opening the package?,RET004
+I opened the box already. Am I still allowed to return it?,RET004
+Do I have to keep the box to return my purchase?,RET005
+Is the original box required for a return?,RET005
+Where can I download the shipping label for my return?,RET006
+How can I print the label to send the product back?,RET006
+Can I swap this item for a different one?,RET007
+My return was declined. How should I proceed?,RET008
+Can a present I received be returned?,RET009
+How do I find out if this product qualifies for return?,RET010
+How much time does it usually take to receive a refund?,REF001
+When should the refunded amount appear in my account?,REF002
+Where can I see the progress of my refund?,REF003
+The refund was accepted but the amount has not arrived,REF004
+Will the refund go back to the card I used?,REF005
+Can I withdraw a refund request after submitting it?,REF006
+Why did I receive less than the amount I paid?,REF007
+"If my order is cancelled, am I eligible for a refund?",REF008
+My refund is taking longer than expected. What can I do?,REF009
+Are delivery fees returned along with the product price?,REF010
+Which ways can I pay at checkout?,PAY001
+My card payment did not go through. Why?,PAY002
+Can I use Visa or another credit card?,PAY003
+Is a bank debit card accepted for purchases?,PAY004
+Can I pay when the package arrives?,PAY005
+The same purchase appears twice on my statement,PAY006
+Where do I enter a discount voucher?,PAY007
+My discount coupon keeps showing an error,PAY008
+Can I switch the payment option after checkout?,PAY009
+Is it safe to save my card details on this website?,PAY010
+What steps do I follow to sign up?,ACC001
+I can't remember my password and need a new one,ACC002
+Where can I edit the email linked to my profile?,ACC003
+My phone number has changed. How do I update it?,ACC004
+My account login keeps failing,ACC005
+I want to permanently remove my user account,ACC006
+How do I correct the address saved to my account?,ACC007
+Can I save home and work addresses on my profile?,ACC008
+How can I stop getting marketing emails?,ACC009
+The verification code never arrived in my inbox or phone,ACC010
+What is the estimated shipping time for my purchase?,DEL001
+I entered the wrong shipping address. Can it be corrected?,DEL002
+Can I schedule delivery for a specific hour?,DEL003
+What happens if the courier comes when nobody is home?,DEL004
+My package is arriving later than promised,DEL005
+How can I check whether delivery is available for my postcode?,DEL006
+Can I add a note for the delivery driver?,DEL007
+Will the website alert me when my parcel is arriving?,DEL008
+The delivery person could not complete the drop-off,DEL009
+Can I pick up the order from a collection point instead?,DEL010
+Where do I find the technical details for an item?,PRD001
+Does this item come in a larger or smaller size?,PRD002
+How do I know if a product is currently available?,PRD003
+The product is sold out. Will it come back?,PRD004
+Can I view two products side by side before buying?,PRD005
+Is there a manufacturer's warranty with this item?,PRD006
+What accessories are supplied with the product?,PRD007
+How can I check whether this works with my phone?,PRD008
+Could someone help me choose the right product?,PRD009
+Do the photos show exactly what the item looks like?,PRD010
+Where can I reach the customer care team?,SUP001
+When is customer support available?,SUP002
+How do I submit a formal complaint?,SUP003
+Where can I see updates on my help request?,SUP004
+I have been waiting for a response to my support case,SUP005
+What details should I provide in a support message?,SUP006
+Can I talk to a real person instead of a bot?,SUP007
+The item arrived broken. How do I report this?,SUP008
+One of the products is missing from my delivery,SUP009
+Where is the website's help section?,SUP010
+What can I do to protect my profile from hackers?,SEC001
+I think another person has signed in to my account,SEC002
+Where do I change my account password for security?,SEC003
+Is it okay to tell a support employee my one-time code?,SEC004
+Where can I manage the data privacy settings?,SEC005
+I received a suspicious message pretending to be the store,SEC006
+How do I delete a card saved to my profile?,SEC007
+Why does the site need me to confirm who I am?,SEC008
+I'm new here. How do I navigate the online store?,GEN001
+Where are the rules and policies for shopping?,GEN002
+How can I rate a product I purchased?,GEN003
+Can I change a review that I already posted?,GEN004
+The listing has wrong details. Where should I report it?,GEN005
+Is there a new customer discount for my first purchase?,GEN006
+Where can I find the latest deals and promotions?,GEN007
+How do I share my experience with the store?,GEN008
+Where can I read the full terms of use?,GEN009
+Can I get alerts when new items are added?,GEN010

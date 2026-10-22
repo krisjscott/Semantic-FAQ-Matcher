@@ -1,0 +1,27 @@
+[
+  {
+    "source_filename": "semantic_faq_test_queries (1).csv",
+    "path": "backend/data/semantic_faq_test_queries.csv",
+    "sha256": "d40734e9fd5cb92626de0c7765441bab1496424ec1f25acd35d2ad1a20af46ee"
+  },
+  {
+    "source_filename": "semantic_faq_additional_test_queries.csv",
+    "path": "backend/data/semantic_faq_additional_test_queries.csv",
+    "sha256": "88dd09a1327e7d5de0d7d78be56ceb13faccf0e4397b9a869e3ef7f66fb89720"
+  },
+  {
+    "source_filename": "semantic_faq_no_match_test_queries.csv",
+    "path": "backend/data/semantic_faq_no_match_test_queries.csv",
+    "sha256": "e312a0de5bf6ed58d65bae534d82f0fa2d5660088b32d1321a63425a5e092b4c"
+  },
+  {
+    "source_filename": "Semantic_FAQ_Matcher_Jury2.ipynb",
+    "path": "notebooks/Semantic_FAQ_Matcher_Jury2.ipynb",
+    "sha256": "4eea989bd2194d93c13ae0c384fdde3c32078da45514823c3680ee174fa23fce"
+  },
+  {
+    "source_filename": "semantic_faq_dataset.csv",
+    "path": "backend/semantic_faq_dataset.csv",
+    "sha256": "ce078f385758e5c54d18956d0a530085ae9689449f3ef7fce2474180ab5cbac7"
+  }
+]

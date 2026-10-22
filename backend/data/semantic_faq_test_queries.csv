@@ -1,0 +1,21 @@
+user_query,expected_faq_id
+I forgot my login password,ACC002
+Where is my parcel?,ORD002
+Can I send back something I bought?,RET002
+When will my money be refunded?,REF002
+I need to update my email,ACC003
+I want to stop my order,ORD011
+Can I pay by card?,PAY003
+I need help from a support agent,SUP007
+My transaction was rejected,PAY002
+How do I register?,ACC001
+The package has not arrived on time,DEL005
+I got charged two times,PAY006
+How do I remove my profile?,ACC006
+Can I find the item in a different size?,PRD002
+Someone accessed my account without permission,SEC002
+How can I complain about a damaged product?,SUP008
+Do I need to tell support my OTP?,SEC004
+Where can I see the product guarantee?,PRD006
+I want to stop promotional messages,ACC009
+What is the delivery time?,DEL001

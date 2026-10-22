@@ -1,0 +1,99 @@
+faq_id,category,question,answer
+ORD001,Order Tracking,How can I track my order?,"Open the Orders section of your account, select the order, and choose Track Order."
+ORD002,Order Tracking,Where is my parcel right now?,Open your order details and use the tracking link to view the latest carrier update.
+ORD003,Order Tracking,How do I find my tracking number?,Your tracking number is shown in the shipping confirmation email and in your order details.
+ORD004,Order Tracking,Why has my tracking status not changed?,"Carrier tracking may take time to update. Check again later, or contact support if it remains unchanged for an extended period."
+ORD005,Order Tracking,My order says delivered but I did not receive it. What should I do?,"Check with household members or your building reception, then contact the delivery provider or customer support."
+ORD006,Order Tracking,Can I track an order without an account?,"Use the order-tracking link in your confirmation email, if one was provided. Otherwise, contact support with your order details."
+ORD007,Order Tracking,How do I check the status of a recent purchase?,Visit the Orders section and open the purchase to see its current status.
+ORD008,Order Tracking,What does order shipped mean?,It means the package has left the seller or warehouse and is being transferred to the delivery carrier.
+ORD009,Order Tracking,What does out for delivery mean?,"It usually means the carrier plans to deliver the package that day, though delays can occur."
+ORD010,Order Tracking,Can I get updates about my shipment?,Check notification preferences in your account and make sure your email or phone number is correct.
+RET001,Returns,How can I return a product?,Open your order details and select Return Item if the product is eligible.
+RET002,Returns,Can I send back something I bought?,Check the product's return eligibility in your order details and follow the return instructions.
+RET003,Returns,How many days do I have to return an item?,The return window depends on the product and store policy. Check the return information for your order.
+RET004,Returns,Can I return an opened product?,Eligibility for opened products varies by product type and policy. Review the return conditions before submitting a request.
+RET005,Returns,Do I need the original packaging for a return?,Some returns require original packaging and included accessories. Check the instructions provided for your item.
+RET006,Returns,How do I print a return label?,"If a return label is provided, download it from the return instructions or confirmation email."
+RET007,Returns,Can I exchange an item instead of returning it?,"If exchanges are supported, the option will appear in the order's return or exchange workflow."
+RET008,Returns,My return request was rejected. What can I do?,Review the reason given in the return decision and contact customer support if you believe it was incorrect.
+RET009,Returns,Can I return a gift?,Gift return options depend on the store policy. Contact support or check the gift receipt for instructions.
+RET010,Returns,How do I check whether my item is returnable?,Open the order details and review the return eligibility and deadline for that item.
+REF001,Refunds,How long does a refund take?,Refund timing depends on the payment method and provider. Check the refund confirmation for the expected timeline.
+REF002,Refunds,When will my money be returned?,"Once the refund is approved, the funds are processed according to the payment provider's timeline."
+REF003,Refunds,Where can I check my refund status?,Open your order or returns page and look for the refund status.
+REF004,Refunds,My refund was approved but I have not received it.,Check the stated processing time and your original payment account. Contact support if the expected period has passed.
+REF005,Refunds,Will I get a refund to my original payment method?,Refunds are generally sent to the original payment method where supported
+REF006,Refunds,Can I cancel a refund request?,Contact customer support promptly to ask whether the refund request can still be changed.
+REF007,Refunds,Why is my refund amount lower than expected?,Review any deductions or partial-refund details in the refund confirmation and contact support if something is unclear.
+REF008,Refunds,Can I get a refund for a cancelled order?,"If payment was captured, an eligible cancelled order is normally processed for refund under the store policy."
+REF009,Refunds,What should I do if a refund is overdue?,"Check the expected processing period, then contact support with your order number and refund reference."
+REF010,Refunds,Do refunds include shipping charges?,Shipping-charge refunds depend on the reason for return and the applicable policy.
+PAY001,Payments,Which payment methods can I use?,Available payment methods are displayed at checkout and may vary by region.
+PAY002,Payments,Why was my payment declined?,"Verify your payment details, available funds, and bank restrictions, then try again or contact your bank."
+PAY003,Payments,Can I pay using a credit card?,"If credit cards are supported, the available card options will appear at checkout."
+PAY004,Payments,Can I use a debit card to pay?,Check the payment options at checkout to confirm whether debit cards are supported.
+PAY005,Payments,Is cash on delivery available?,Cash-on-delivery availability depends on the delivery location and order. Check the options at checkout.
+PAY006,Payments,I was charged twice for one order. What should I do?,"Check whether both entries are completed charges or one is a temporary authorization, then contact support with the transaction details."
+PAY007,Payments,How do I apply a promo code?,Enter the valid promo code in the discount or coupon field at checkout before placing the order.
+PAY008,Payments,Why is my coupon code not working?,"Check the code's expiry date, minimum spend, eligible products, and any usage restrictions."
+PAY009,Payments,Can I change my payment method after placing an order?,Payment methods usually cannot be changed after an order is placed. Contact support to check available options.
+PAY010,Payments,Is my payment information stored securely?,Use the official checkout and review the site's privacy and payment-security information. Never share your password or OTP.
+ACC001,Account,How do I create an account?,Select Sign Up or Create Account and complete the required registration fields.
+ACC002,Account,I forgot my password. How can I reset it?,Select Forgot Password on the sign-in page and follow the reset instructions sent to your registered contact.
+ACC003,Account,How can I change my email address?,Open Account Settings and look for the email or profile section. Follow any verification steps.
+ACC004,Account,How do I update my phone number?,"Open Account Settings, edit your phone number, and complete verification if requested."
+ACC005,Account,I cannot log in to my account. What should I do?,"Check your login details, reset your password if needed, and contact support if the issue continues."
+ACC006,Account,How can I delete my account?,Review Account Settings for a deletion option or contact support to learn the account-closure process.
+ACC007,Account,How do I change my delivery address?,Open your saved addresses in Account Settings and edit or add the correct address.
+ACC008,Account,Can I have more than one delivery address?,"If address management is supported, you can add multiple addresses in your account and select one at checkout."
+ACC009,Account,How do I unsubscribe from promotional emails?,Use the unsubscribe link in a promotional email or change marketing preferences in your account.
+ACC010,Account,I did not receive my verification code.,"Check your phone number or email, look in spam folders, and request a new code after waiting briefly."
+DEL001,Delivery,How long will delivery take?,The estimated delivery date is shown at checkout or in your order details and may change due to carrier delays.
+DEL002,Delivery,Can I change my delivery address after ordering?,Address changes depend on the order's shipping stage. Contact support as soon as possible.
+DEL003,Delivery,Can I choose a delivery time?,"Scheduled delivery options, when available, are shown during checkout or by the carrier."
+DEL004,Delivery,What happens if I am not home for delivery?,"The carrier may attempt redelivery, leave instructions, or hold the package for collection. Check the tracking page."
+DEL005,Delivery,My delivery is late. What should I do?,Check the latest tracking update and estimated date. Contact support if the shipment is significantly overdue.
+DEL006,Delivery,Do you deliver to my area?,Enter your postal code at checkout to check whether delivery is available for your location.
+DEL007,Delivery,Can I change the delivery instructions?,"If supported, update instructions in the order details or contact the carrier before delivery."
+DEL008,Delivery,Will I receive a delivery notification?,Notifications depend on your account settings and carrier service. Check that your contact details are current.
+DEL009,Delivery,Why was my delivery attempt unsuccessful?,"Check the carrier's reason and instructions, then arrange redelivery or collection if available."
+DEL010,Delivery,Can I collect my order instead of receiving delivery?,Pickup options depend on the seller and location. Check the available fulfillment options for your order.
+PRD001,Products,How do I find product specifications?,"Open the product page and review the specifications, description, and included-items sections."
+PRD002,Products,Is this product available in another size?,Check the product page's available size options or contact support for availability information.
+PRD003,Products,How can I check whether an item is in stock?,The product page normally displays current availability and any selectable options.
+PRD004,Products,Will this product be restocked?,Restock timing may not be available. Check the product page later or use a restock notification if offered.
+PRD005,Products,How do I compare two products?,"Compare their specifications, features, dimensions, compatibility, price, and warranty details."
+PRD006,Products,Does the product come with a warranty?,Review the product listing or warranty documentation for coverage and duration.
+PRD007,Products,What is included in the box?,Check the product description or package-contents section for included accessories.
+PRD008,Products,How do I know if this product fits my device?,Check the listed compatibility requirements and compare them with your device's model and specifications.
+PRD009,Products,Can I get help choosing a product?,"Share your needs, budget, and required features with customer support for product guidance."
+PRD010,Products,Are product images exact representations?,"Images are intended to illustrate the product, but colour and appearance can vary by screen and lighting."
+SUP001,Customer Support,How can I contact customer support?,Use the Help or Contact Us section to find the available support channels.
+SUP002,Customer Support,What are your customer service hours?,Check the Help or Contact Us page for current support hours.
+SUP003,Customer Support,How do I raise a complaint?,Contact support through the official Help section and include your order number and a clear description of the issue.
+SUP004,Customer Support,How can I check my support ticket status?,Use the support portal or the link in your ticket confirmation to view its current status.
+SUP005,Customer Support,I have not received a reply to my ticket.,"Check the ticket status and expected response time, then follow up through the official support channel."
+SUP006,Customer Support,What information should I include when contacting support?,"Provide the order or ticket reference, a brief issue description, and relevant screenshots while avoiding passwords or OTPs."
+SUP007,Customer Support,Can I speak to a human agent?,Use the contact options in the Help section and request a human agent if that option is available.
+SUP008,Customer Support,How do I report a damaged item?,"Open a support request with your order details and clear photos of the damage, following the store's instructions."
+SUP009,Customer Support,How do I report a missing item in my package?,Contact support with your order number and describe which item was missing.
+SUP010,Customer Support,Where can I find the help centre?,"Look for Help, Support, or Contact Us in the website or app navigation."
+SEC001,Privacy and Security,How can I keep my account secure?,"Use a strong unique password, enable available security features, and never share your password or verification codes."
+SEC002,Privacy and Security,What should I do if I suspect someone accessed my account?,"Change your password immediately, review account activity, and contact support if you notice unauthorized changes."
+SEC003,Privacy and Security,How do I change my password?,"Open Account Settings and select the password option, then follow the verification steps."
+SEC004,Privacy and Security,Should I share my one-time password with support?,"No. Never share an OTP or verification code with anyone, including someone claiming to be support."
+SEC005,Privacy and Security,How can I review my privacy preferences?,Open the privacy or account settings section to review the available data and communication preferences.
+SEC006,Privacy and Security,How do I report a suspicious email?,Do not click suspicious links or share information. Report it through the official support or security channel.
+SEC007,Privacy and Security,Can I remove a saved payment method?,Open your payment settings and remove the saved method if that option is available.
+SEC008,Privacy and Security,Why am I being asked to verify my identity?,Verification may help protect your account or confirm a sensitive change. Follow instructions only through official channels.
+GEN001,General,How do I use the website?,"Browse the available categories, open a product or service page, and use the Help section if you need assistance."
+GEN002,General,Where can I read the store policies?,"Look for the Terms, Privacy, Shipping, Returns, or Help links on the website."
+GEN003,General,How do I leave product feedback?,Open the product page and use the review or rating option if it is available.
+GEN004,General,Can I edit a review after submitting it?,Review editing options depend on the platform. Check your account's reviews section or contact support.
+GEN005,General,How do I report an incorrect product listing?,Contact support with the product link and a description of the incorrect information.
+GEN006,General,Do you offer discounts for first-time customers?,Check the current promotions page or newsletter for any first-order offers and their conditions.
+GEN007,General,How do I find current offers?,Visit the offers or promotions section and review the eligibility terms for each offer.
+GEN008,General,How can I give feedback about my shopping experience?,Use the feedback option or contact support through the official Help section.
+GEN009,General,Where can I find terms and conditions?,Look for the Terms and Conditions link in the website footer or Help section.
+GEN010,General,How do I get notified about new products?,"Check whether the website offers a newsletter, follow option, or product notification setting."
