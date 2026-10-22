@@ -1,4 +1,4 @@
-# Semantic FAQ Matcher · PS 47
+# Semantic FAQ Matcher · 
 
 Clarity is a local full-stack FAQ search application built from `Semantic_FAQ_Matcher_Jury2.ipynb`. React provides semantic search, FAQ browsing, and an evaluation dashboard. FastAPI runs `all-MiniLM-L6-v2` through Sentence Transformers and PyTorch. Answers come directly from the existing CSV.
 
