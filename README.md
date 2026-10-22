@@ -48,6 +48,19 @@ npm run preview
 
 Open the preview URL printed by Vite. Its `/api` proxy also requires the backend. For deployment elsewhere, serve `frontend/dist` and route `/api` to FastAPI through your hosting proxy. The included setup targets local use.
 
+## Deploy the backend on Railway
+
+1. Set the backend service's **Root Directory** to `/backend`.
+2. Clear any custom **Build Command** and **Start Command**. Railway detects `backend/Dockerfile` and uses its startup command.
+3. Set `FAQ_CORS_ORIGINS` to your frontend's HTTPS origin if the frontend calls Railway directly.
+4. Redeploy, then request `/api/health` on the backend's public domain. Wait for `Application startup complete` before checking readiness. The first start downloads the model, so leave `FAQ_LOCAL_FILES_ONLY` unset until a model cache is available.
+
+The Dockerfile installs Python 3.12 and CPU PyTorch, copies the backend package to `/app/backend`, and runs `backend.main:app` on `0.0.0.0` using Railway's `PORT` variable.
+
+An error at `/app/main.py` with `attempted relative import with no known parent package` means the backend files were copied directly into `/app` and loaded as a top-level module. Use the Dockerfile layout and startup command together. Merely changing the command to `backend.main:app` will fail if the container has no `backend` directory.
+
+Railway documents [Dockerfile detection](https://docs.railway.com/builds/dockerfiles) and [start command overrides](https://docs.railway.com/deployments/start-command).
+
 ## Project files
 
 ```text
