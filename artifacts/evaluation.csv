@@ -1,0 +1,147 @@
+dataset,query,expected_faq_id,valid_label,predicted_faq_id,score,top1_correct,top3_correct,correct
+original,I forgot my login password,ACC002,True,ACC002,0.8439678502082825,True,True,True
+original,Where is my parcel?,ORD002,True,ORD002,0.9660162568092346,True,True,True
+original,Can I send back something I bought?,RET002,True,RET002,1.0000000238418578,True,True,True
+original,When will my money be refunded?,REF002,True,REF002,0.8614917993545532,True,True,True
+original,I need to update my email,ACC003,True,ACC003,0.684250783920288,True,True,True
+original,I want to stop my order,ORD011,False,ORD001,0.5497383296489715,,,
+original,Can I pay by card?,PAY003,True,PAY003,0.8430023145675659,True,True,True
+original,I need help from a support agent,SUP007,True,SUP006,0.5702560867582048,False,False,False
+original,My transaction was rejected,PAY002,True,RET008,0.6770176768302918,False,True,False
+original,How do I register?,ACC001,True,ACC001,0.6715847730636597,True,True,True
+original,The package has not arrived on time,DEL005,True,ORD005,0.5120452804224832,False,False,False
+original,I got charged two times,PAY006,True,PAY006,0.7391277527809144,True,True,True
+original,How do I remove my profile?,ACC006,True,ACC006,0.6250638484954834,True,True,True
+original,Can I find the item in a different size?,PRD002,True,PRD002,0.668351145585378,True,True,True
+original,Someone accessed my account without permission,SEC002,True,SEC002,0.7892194747924804,True,True,True
+original,How can I complain about a damaged product?,SUP008,True,SUP008,0.7261669158935546,True,True,True
+original,Do I need to tell support my OTP?,SEC004,True,SUP006,0.467014080286026,False,True,False
+original,Where can I see the product guarantee?,PRD006,True,GEN002,0.5082967928477696,False,True,False
+original,I want to stop promotional messages,ACC009,True,ACC009,0.6599426150321961,True,True,True
+original,What is the delivery time?,DEL001,True,DEL001,0.761818974018097,True,True,True
+additional,Can you show me the latest location of my shipment?,ORD001,True,ORD010,0.5825249385833741,False,True,False
+additional,I need to follow my online order,ORD001,True,ORD001,0.6402989217213222,True,True,True
+additional,Where do I see the courier tracking details?,ORD003,True,ORD003,0.5584144234657288,True,True,True
+additional,I cannot find the tracking code for my package,ORD003,True,ORD003,0.606609586874644,True,True,True
+additional,The tracking page has been stuck for two days,ORD004,True,ORD004,0.5705093463261922,True,True,True
+additional,Why is there no new update on my shipment?,ORD004,True,ORD010,0.6142321546872457,False,True,False
+additional,"The courier says delivered, but nothing arrived at my house",ORD005,True,ORD005,0.614510772228241,True,True,True
+additional,My parcel is marked delivered and I don't have it,ORD005,True,ORD002,0.6441016587344083,False,True,False
+additional,Can I follow a purchase as a guest?,ORD006,True,DEL010,0.4640109862600054,False,True,False
+additional,I checked out without signing in. How can I track it?,ORD006,True,ORD001,0.5622161602973939,False,True,False
+additional,Where can I see the progress of my latest purchase?,ORD007,True,ORD007,0.688811001777649,True,True,True
+additional,What does it mean when the seller has shipped my package?,ORD008,True,ORD008,0.7372341080145403,True,True,True
+additional,My order is with the courier and says out for delivery. What does that mean?,ORD009,True,ORD009,0.7098774290084839,True,True,True
+additional,Can you send me shipment progress notifications?,ORD010,True,ORD010,0.6799481238637651,True,True,True
+additional,What is the process for sending a purchase back?,RET001,True,RET002,0.5755389491717021,False,True,False
+additional,I bought the wrong item and want to return it,RET001,True,RET001,0.6332803058624268,True,True,True
+additional,How long after purchase can I send an item back?,RET003,True,RET003,0.7213293290138245,True,True,True
+additional,What is the return window for an order?,RET003,True,RET003,0.4537793755531311,True,True,True
+additional,Can I send back an item after opening the package?,RET004,True,RET002,0.6794413304328919,False,True,False
+additional,I opened the box already. Am I still allowed to return it?,RET004,True,RET004,0.6535096558657559,True,True,True
+additional,Do I have to keep the box to return my purchase?,RET005,True,RET005,0.6425980305671692,True,True,True
+additional,Is the original box required for a return?,RET005,True,RET005,0.7980109453201294,True,True,True
+additional,Where can I download the shipping label for my return?,RET006,True,RET006,0.5608994197845459,True,True,True
+additional,How can I print the label to send the product back?,RET006,True,RET006,0.7157672619819642,True,True,True
+additional,Can I swap this item for a different one?,RET007,True,RET007,0.45078085660934447,True,True,True
+additional,My return was declined. How should I proceed?,RET008,True,RET008,0.7604666471481323,True,True,True
+additional,Can a present I received be returned?,RET009,True,RET009,0.7878970691135951,True,True,True
+additional,How do I find out if this product qualifies for return?,RET010,True,RET001,0.6531864328817888,False,True,False
+additional,How much time does it usually take to receive a refund?,REF001,True,REF001,0.8659917766397649,True,True,True
+additional,When should the refunded amount appear in my account?,REF002,True,REF007,0.6160651167233785,False,True,False
+additional,Where can I see the progress of my refund?,REF003,True,REF003,0.8308597405751547,True,True,True
+additional,The refund was accepted but the amount has not arrived,REF004,True,REF004,0.6985392610232035,True,True,True
+additional,Will the refund go back to the card I used?,REF005,True,REF005,0.7000719944636027,True,True,True
+additional,Can I withdraw a refund request after submitting it?,REF006,True,REF006,0.8035517533620199,True,True,True
+additional,Why did I receive less than the amount I paid?,REF007,True,PAY002,0.6298807422320049,False,True,False
+additional,"If my order is cancelled, am I eligible for a refund?",REF008,True,REF008,0.8491081779653376,True,True,True
+additional,My refund is taking longer than expected. What can I do?,REF009,True,REF009,0.7152799422090703,True,True,True
+additional,Are delivery fees returned along with the product price?,REF010,True,REF010,0.597767174243927,True,True,True
+additional,Which ways can I pay at checkout?,PAY001,True,PAY001,0.7101873942783901,True,True,True
+additional,My card payment did not go through. Why?,PAY002,True,PAY002,0.587272846698761,True,True,True
+additional,Can I use Visa or another credit card?,PAY003,True,PAY003,0.7230712294578552,True,True,True
+additional,Is a bank debit card accepted for purchases?,PAY004,True,PAY004,0.6916197776794434,True,True,True
+additional,Can I pay when the package arrives?,PAY005,True,DEL010,0.6068128670964922,False,True,False
+additional,The same purchase appears twice on my statement,PAY006,True,PAY006,0.49842568039894103,True,True,True
+additional,Where do I enter a discount voucher?,PAY007,True,PAY007,0.5633463450840541,True,True,True
+additional,My discount coupon keeps showing an error,PAY008,True,PAY008,0.7143104399953569,True,True,True
+additional,Can I switch the payment option after checkout?,PAY009,True,PAY009,0.7299873352050781,True,True,True
+additional,Is it safe to save my card details on this website?,PAY010,True,PAY010,0.5084331295707009,True,True,True
+additional,What steps do I follow to sign up?,ACC001,True,ACC001,0.5441595077514648,True,True,True
+additional,I can't remember my password and need a new one,ACC002,True,ACC002,0.7531397266821428,True,True,True
+additional,Where can I edit the email linked to my profile?,ACC003,True,ACC003,0.5858779525756836,True,True,True
+additional,My phone number has changed. How do I update it?,ACC004,True,ACC004,0.9060571002960205,True,True,True
+additional,My account login keeps failing,ACC005,True,ACC005,0.717361924648285,True,True,True
+additional,I want to permanently remove my user account,ACC006,True,ACC006,0.7020840287208557,True,True,True
+additional,How do I correct the address saved to my account?,ACC007,True,ACC007,0.5482098579406738,True,True,True
+additional,Can I save home and work addresses on my profile?,ACC008,True,,0.36645600080490115,True,True,False
+additional,How can I stop getting marketing emails?,ACC009,True,ACC009,0.6525635310581752,True,True,True
+additional,The verification code never arrived in my inbox or phone,ACC010,True,ACC010,0.7752364706993103,True,True,True
+additional,What is the estimated shipping time for my purchase?,DEL001,True,DEL001,0.583173394203186,True,True,True
+additional,I entered the wrong shipping address. Can it be corrected?,DEL002,True,ACC007,0.573711006641388,False,True,False
+additional,Can I schedule delivery for a specific hour?,DEL003,True,DEL003,0.7418233275413513,True,True,True
+additional,What happens if the courier comes when nobody is home?,DEL004,True,DEL004,0.6082630133628846,True,True,True
+additional,My package is arriving later than promised,DEL005,True,ORD005,0.5759842855589731,False,True,False
+additional,How can I check whether delivery is available for my postcode?,DEL006,True,ACC007,0.5071754677729173,False,False,False
+additional,Can I add a note for the delivery driver?,DEL007,True,DEL007,0.5151094834009806,True,True,True
+additional,Will the website alert me when my parcel is arriving?,DEL008,True,DEL008,0.6688664102554321,True,True,True
+additional,The delivery person could not complete the drop-off,DEL009,True,DEL009,0.6139746189117432,True,True,True
+additional,Can I pick up the order from a collection point instead?,DEL010,True,DEL010,0.5336731000380083,True,True,True
+additional,Where do I find the technical details for an item?,PRD001,True,PRD001,0.6484394502639771,True,True,True
+additional,Does this item come in a larger or smaller size?,PRD002,True,PRD002,0.5415328574180603,True,True,True
+additional,How do I know if a product is currently available?,PRD003,True,PRD003,0.5716111493110657,True,True,True
+additional,The product is sold out. Will it come back?,PRD004,True,RET004,0.5329350988070171,False,True,False
+additional,Can I view two products side by side before buying?,PRD005,True,,0.36872740387916564,True,True,False
+additional,Is there a manufacturer's warranty with this item?,PRD006,True,PRD006,0.7518422484397889,True,True,True
+additional,What accessories are supplied with the product?,PRD007,True,PRD007,0.7033666099820818,True,True,True
+additional,How can I check whether this works with my phone?,PRD008,True,PRD008,0.5038009858131409,True,True,True
+additional,Could someone help me choose the right product?,PRD009,True,PRD009,0.6454393029212951,True,True,True
+additional,Do the photos show exactly what the item looks like?,PRD010,True,,0.37303268909454346,True,True,False
+additional,Where can I reach the customer care team?,SUP001,True,SUP001,0.6534262537956238,True,True,True
+additional,When is customer support available?,SUP002,True,SUP001,0.6628656363487244,False,True,False
+additional,How do I submit a formal complaint?,SUP003,True,SUP003,0.8447649989809308,True,True,True
+additional,Where can I see updates on my help request?,SUP004,True,SUP010,0.5621533135573069,False,False,False
+additional,I have been waiting for a response to my support case,SUP005,True,SUP006,0.49331277229569176,False,False,False
+additional,What details should I provide in a support message?,SUP006,True,SUP006,0.8099146525065104,True,True,True
+additional,Can I talk to a real person instead of a bot?,SUP007,True,SUP007,0.5921564674377442,True,True,True
+additional,The item arrived broken. How do I report this?,SUP008,True,SUP008,0.821239193280538,True,True,True
+additional,One of the products is missing from my delivery,SUP009,True,SUP009,0.5386656244595845,True,True,True
+additional,Where is the website's help section?,SUP010,True,SUP010,0.6993773766926357,True,True,True
+additional,What can I do to protect my profile from hackers?,SEC001,True,SEC001,0.6479988527297974,True,True,True
+additional,I think another person has signed in to my account,SEC002,True,SEC002,0.586135311126709,True,True,True
+additional,Where do I change my account password for security?,SEC003,True,SEC003,0.7970743378003439,True,True,True
+additional,Is it okay to tell a support employee my one-time code?,SEC004,True,SEC004,0.5323923408985138,True,True,True
+additional,Where can I manage the data privacy settings?,SEC005,True,SEC005,0.575900936126709,True,True,True
+additional,I received a suspicious message pretending to be the store,SEC006,True,SEC006,0.46001590609550475,True,True,True
+additional,How do I delete a card saved to my profile?,SEC007,True,ACC006,0.5420882081985474,False,True,False
+additional,Why does the site need me to confirm who I am?,SEC008,True,SEC008,0.6803354545073076,True,True,True
+additional,I'm new here. How do I navigate the online store?,GEN001,True,GEN001,0.4825901663303375,True,True,True
+additional,Where are the rules and policies for shopping?,GEN002,True,GEN002,0.6724282741546631,True,True,True
+additional,How can I rate a product I purchased?,GEN003,True,GEN008,0.5621168204716274,False,False,False
+additional,Can I change a review that I already posted?,GEN004,True,GEN004,0.7612902045249939,True,True,True
+additional,The listing has wrong details. Where should I report it?,GEN005,True,GEN005,0.7198650074005127,True,True,True
+additional,Is there a new customer discount for my first purchase?,GEN006,True,GEN006,0.7212362575531006,True,True,True
+additional,Where can I find the latest deals and promotions?,GEN007,True,GEN007,0.5728193243344625,True,True,True
+additional,How do I share my experience with the store?,GEN008,True,GEN008,0.6668786446253459,True,True,True
+additional,Where can I read the full terms of use?,GEN009,True,GEN009,0.4837800900141398,True,True,True
+additional,Can I get alerts when new items are added?,GEN010,True,GEN010,0.5911403775215149,True,True,True
+unrelated,What is the weather forecast for tomorrow?,,True,,0.22436636814049313,,,True
+unrelated,Who won the football match last night?,,True,,0.18442925810813904,,,True
+unrelated,Can you explain quantum entanglement?,,True,,0.18555214881896973,,,True
+unrelated,Write me a poem about the ocean,,True,,0.14600643643311093,,,True
+unrelated,How do I apply for a passport?,,True,,0.33510654057775224,,,True
+unrelated,What is the capital city of Japan?,,True,,0.13497876014028276,,,True
+unrelated,Can you solve this calculus equation?,,True,,0.18874805569648742,,,True
+unrelated,Tell me a joke about programmers,,True,,0.14050361514091492,,,True
+unrelated,How do I install Linux on my laptop?,,True,,0.23842572867870332,,,True
+unrelated,What are the symptoms of seasonal allergies?,,True,,0.21771699445588247,,,True
+unrelated,Can you recommend a movie to watch tonight?,,True,,0.181888148188591,,,True
+unrelated,How far is the Moon from Earth?,,True,,0.18772180506161282,,,True
+unrelated,What is the current exchange rate?,,True,,0.32733639478683474,,,True
+unrelated,Help me prepare for a Java interview,,True,,0.18166135251522064,,,True
+unrelated,Who is the president of France?,,True,,0.12904542088508605,,,True
+unrelated,Explain how solar panels generate electricity,,True,,0.18760725259780883,,,True
+unrelated,What time does the local train leave?,,True,,0.31516908236912317,,,True
+unrelated,Can you create a workout routine for me?,,True,,0.1459376871585846,,,True
+unrelated,How do I bake a chocolate cake?,,True,,0.21724588062082018,,,True
+unrelated,What is the difference between TCP and UDP?,,True,,0.15909916460514067,,,True

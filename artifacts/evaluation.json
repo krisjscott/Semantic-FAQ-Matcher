@@ -1,0 +1,2539 @@
+{
+  "metadata": {
+    "model": "all-MiniLM-L6-v2",
+    "faq_count": 98,
+    "categories": [
+      {
+        "name": "Account",
+        "count": 10
+      },
+      {
+        "name": "Customer Support",
+        "count": 10
+      },
+      {
+        "name": "Delivery",
+        "count": 10
+      },
+      {
+        "name": "General",
+        "count": 10
+      },
+      {
+        "name": "Order Tracking",
+        "count": 10
+      },
+      {
+        "name": "Payments",
+        "count": 10
+      },
+      {
+        "name": "Privacy and Security",
+        "count": 8
+      },
+      {
+        "name": "Products",
+        "count": 10
+      },
+      {
+        "name": "Refunds",
+        "count": 10
+      },
+      {
+        "name": "Returns",
+        "count": 10
+      }
+    ],
+    "default_threshold": 0.45,
+    "semantic_weight": 0.85,
+    "keyword_weight": 0.15,
+    "dataset_sha256": "ce078f385758e5c54d18956d0a530085ae9689449f3ef7fce2474180ab5cbac7",
+    "datasets": [
+      {
+        "key": "original",
+        "name": "Original queries",
+        "filename": "semantic_faq_test_queries.csv",
+        "labeled": true,
+        "available": true,
+        "count": 20
+      },
+      {
+        "key": "additional",
+        "name": "Additional queries",
+        "filename": "semantic_faq_additional_test_queries.csv",
+        "labeled": true,
+        "available": true,
+        "count": 106
+      },
+      {
+        "key": "unrelated",
+        "name": "Unrelated queries",
+        "filename": "semantic_faq_no_match_test_queries.csv",
+        "labeled": false,
+        "available": true,
+        "count": 20
+      }
+    ]
+  },
+  "threshold": 0.45,
+  "model": "all-MiniLM-L6-v2",
+  "measured_at": "2026-10-22T07:40:05.985502+00:00",
+  "datasets": [
+    {
+      "key": "original",
+      "name": "Original queries",
+      "filename": "semantic_faq_test_queries.csv",
+      "labeled": true,
+      "available": true,
+      "count": 20,
+      "valid_count": 19,
+      "invalid_count": 1,
+      "top1_accuracy": 0.7368421052631579,
+      "top3_accuracy": 0.8947368421052632,
+      "accepted_accuracy": 0.7368421052631579,
+      "rejection_rate": null,
+      "false_accepts": null
+    },
+    {
+      "key": "additional",
+      "name": "Additional queries",
+      "filename": "semantic_faq_additional_test_queries.csv",
+      "labeled": true,
+      "available": true,
+      "count": 106,
+      "valid_count": 106,
+      "invalid_count": 0,
+      "top1_accuracy": 0.8113207547169812,
+      "top3_accuracy": 0.9622641509433962,
+      "accepted_accuracy": 0.7830188679245284,
+      "rejection_rate": null,
+      "false_accepts": null
+    },
+    {
+      "key": "unrelated",
+      "name": "Unrelated queries",
+      "filename": "semantic_faq_no_match_test_queries.csv",
+      "labeled": false,
+      "available": true,
+      "count": 20,
+      "valid_count": 20,
+      "invalid_count": 0,
+      "top1_accuracy": null,
+      "top3_accuracy": null,
+      "accepted_accuracy": null,
+      "rejection_rate": 1.0,
+      "false_accepts": 0
+    }
+  ],
+  "rows": [
+    {
+      "dataset": "original",
+      "query": "I forgot my login password",
+      "expected_faq_id": "ACC002",
+      "valid_label": true,
+      "candidates": [
+        "ACC002",
+        "SEC003",
+        "ACC005"
+      ],
+      "score": 0.8439678502082825,
+      "predicted_faq_id": "ACC002",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "original",
+      "query": "Where is my parcel?",
+      "expected_faq_id": "ORD002",
+      "valid_label": true,
+      "candidates": [
+        "ORD002",
+        "ACC007",
+        "DEL006"
+      ],
+      "score": 0.9660162568092346,
+      "predicted_faq_id": "ORD002",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "original",
+      "query": "Can I send back something I bought?",
+      "expected_faq_id": "RET002",
+      "valid_label": true,
+      "candidates": [
+        "RET002",
+        "RET009",
+        "RET007"
+      ],
+      "score": 1.0000000238418578,
+      "predicted_faq_id": "RET002",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "original",
+      "query": "When will my money be refunded?",
+      "expected_faq_id": "REF002",
+      "valid_label": true,
+      "candidates": [
+        "REF002",
+        "REF001",
+        "REF005"
+      ],
+      "score": 0.8614917993545532,
+      "predicted_faq_id": "REF002",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "original",
+      "query": "I need to update my email",
+      "expected_faq_id": "ACC003",
+      "valid_label": true,
+      "candidates": [
+        "ACC003",
+        "ACC004",
+        "SEC003"
+      ],
+      "score": 0.684250783920288,
+      "predicted_faq_id": "ACC003",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "original",
+      "query": "I want to stop my order",
+      "expected_faq_id": "ORD011",
+      "valid_label": false,
+      "candidates": [
+        "ORD001",
+        "DEL010",
+        "ORD005"
+      ],
+      "score": 0.5497383296489715,
+      "predicted_faq_id": "ORD001",
+      "top1_correct": null,
+      "top3_correct": null,
+      "correct": null
+    },
+    {
+      "dataset": "original",
+      "query": "Can I pay by card?",
+      "expected_faq_id": "PAY003",
+      "valid_label": true,
+      "candidates": [
+        "PAY003",
+        "PAY004",
+        "PAY001"
+      ],
+      "score": 0.8430023145675659,
+      "predicted_faq_id": "PAY003",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "original",
+      "query": "I need help from a support agent",
+      "expected_faq_id": "SUP007",
+      "valid_label": true,
+      "candidates": [
+        "SUP006",
+        "SUP001",
+        "SUP004"
+      ],
+      "score": 0.5702560867582048,
+      "predicted_faq_id": "SUP006",
+      "top1_correct": false,
+      "top3_correct": false,
+      "correct": false
+    },
+    {
+      "dataset": "original",
+      "query": "My transaction was rejected",
+      "expected_faq_id": "PAY002",
+      "valid_label": true,
+      "candidates": [
+        "RET008",
+        "PAY002",
+        "DEL009"
+      ],
+      "score": 0.6770176768302918,
+      "predicted_faq_id": "RET008",
+      "top1_correct": false,
+      "top3_correct": true,
+      "correct": false
+    },
+    {
+      "dataset": "original",
+      "query": "How do I register?",
+      "expected_faq_id": "ACC001",
+      "valid_label": true,
+      "candidates": [
+        "ACC001",
+        "GEN001",
+        "PAY007"
+      ],
+      "score": 0.6715847730636597,
+      "predicted_faq_id": "ACC001",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "original",
+      "query": "The package has not arrived on time",
+      "expected_faq_id": "DEL005",
+      "valid_label": true,
+      "candidates": [
+        "ORD005",
+        "DEL001",
+        "SUP009"
+      ],
+      "score": 0.5120452804224832,
+      "predicted_faq_id": "ORD005",
+      "top1_correct": false,
+      "top3_correct": false,
+      "correct": false
+    },
+    {
+      "dataset": "original",
+      "query": "I got charged two times",
+      "expected_faq_id": "PAY006",
+      "valid_label": true,
+      "candidates": [
+        "PAY006",
+        "ORD005",
+        "SUP005"
+      ],
+      "score": 0.7391277527809144,
+      "predicted_faq_id": "PAY006",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "original",
+      "query": "How do I remove my profile?",
+      "expected_faq_id": "ACC006",
+      "valid_label": true,
+      "candidates": [
+        "ACC006",
+        "SEC003",
+        "ACC003"
+      ],
+      "score": 0.6250638484954834,
+      "predicted_faq_id": "ACC006",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "original",
+      "query": "Can I find the item in a different size?",
+      "expected_faq_id": "PRD002",
+      "valid_label": true,
+      "candidates": [
+        "PRD002",
+        "PRD009",
+        "RET007"
+      ],
+      "score": 0.668351145585378,
+      "predicted_faq_id": "PRD002",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "original",
+      "query": "Someone accessed my account without permission",
+      "expected_faq_id": "SEC002",
+      "valid_label": true,
+      "candidates": [
+        "SEC002",
+        "ACC005",
+        "ACC006"
+      ],
+      "score": 0.7892194747924804,
+      "predicted_faq_id": "SEC002",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "original",
+      "query": "How can I complain about a damaged product?",
+      "expected_faq_id": "SUP008",
+      "valid_label": true,
+      "candidates": [
+        "SUP008",
+        "GEN005",
+        "RET001"
+      ],
+      "score": 0.7261669158935546,
+      "predicted_faq_id": "SUP008",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "original",
+      "query": "Do I need to tell support my OTP?",
+      "expected_faq_id": "SEC004",
+      "valid_label": true,
+      "candidates": [
+        "SUP006",
+        "SEC004",
+        "SUP004"
+      ],
+      "score": 0.467014080286026,
+      "predicted_faq_id": "SUP006",
+      "top1_correct": false,
+      "top3_correct": true,
+      "correct": false
+    },
+    {
+      "dataset": "original",
+      "query": "Where can I see the product guarantee?",
+      "expected_faq_id": "PRD006",
+      "valid_label": true,
+      "candidates": [
+        "GEN002",
+        "PRD006",
+        "PRD001"
+      ],
+      "score": 0.5082967928477696,
+      "predicted_faq_id": "GEN002",
+      "top1_correct": false,
+      "top3_correct": true,
+      "correct": false
+    },
+    {
+      "dataset": "original",
+      "query": "I want to stop promotional messages",
+      "expected_faq_id": "ACC009",
+      "valid_label": true,
+      "candidates": [
+        "ACC009",
+        "PAY007",
+        "GEN003"
+      ],
+      "score": 0.6599426150321961,
+      "predicted_faq_id": "ACC009",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "original",
+      "query": "What is the delivery time?",
+      "expected_faq_id": "DEL001",
+      "valid_label": true,
+      "candidates": [
+        "DEL001",
+        "DEL003",
+        "DEL005"
+      ],
+      "score": 0.761818974018097,
+      "predicted_faq_id": "DEL001",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "additional",
+      "query": "Can you show me the latest location of my shipment?",
+      "expected_faq_id": "ORD001",
+      "valid_label": true,
+      "candidates": [
+        "ORD010",
+        "ORD002",
+        "ORD001"
+      ],
+      "score": 0.5825249385833741,
+      "predicted_faq_id": "ORD010",
+      "top1_correct": false,
+      "top3_correct": true,
+      "correct": false
+    },
+    {
+      "dataset": "additional",
+      "query": "I need to follow my online order",
+      "expected_faq_id": "ORD001",
+      "valid_label": true,
+      "candidates": [
+        "ORD001",
+        "ORD006",
+        "ORD005"
+      ],
+      "score": 0.6402989217213222,
+      "predicted_faq_id": "ORD001",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "additional",
+      "query": "Where do I see the courier tracking details?",
+      "expected_faq_id": "ORD003",
+      "valid_label": true,
+      "candidates": [
+        "ORD003",
+        "ORD001",
+        "ORD002"
+      ],
+      "score": 0.5584144234657288,
+      "predicted_faq_id": "ORD003",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "additional",
+      "query": "I cannot find the tracking code for my package",
+      "expected_faq_id": "ORD003",
+      "valid_label": true,
+      "candidates": [
+        "ORD003",
+        "ORD004",
+        "ORD001"
+      ],
+      "score": 0.606609586874644,
+      "predicted_faq_id": "ORD003",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "additional",
+      "query": "The tracking page has been stuck for two days",
+      "expected_faq_id": "ORD004",
+      "valid_label": true,
+      "candidates": [
+        "ORD004",
+        "ORD003",
+        "ACC005"
+      ],
+      "score": 0.5705093463261922,
+      "predicted_faq_id": "ORD004",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "additional",
+      "query": "Why is there no new update on my shipment?",
+      "expected_faq_id": "ORD004",
+      "valid_label": true,
+      "candidates": [
+        "ORD010",
+        "ORD004",
+        "ORD005"
+      ],
+      "score": 0.6142321546872457,
+      "predicted_faq_id": "ORD010",
+      "top1_correct": false,
+      "top3_correct": true,
+      "correct": false
+    },
+    {
+      "dataset": "additional",
+      "query": "The courier says delivered, but nothing arrived at my house",
+      "expected_faq_id": "ORD005",
+      "valid_label": true,
+      "candidates": [
+        "ORD005",
+        "DEL004",
+        "DEL009"
+      ],
+      "score": 0.614510772228241,
+      "predicted_faq_id": "ORD005",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "additional",
+      "query": "My parcel is marked delivered and I don't have it",
+      "expected_faq_id": "ORD005",
+      "valid_label": true,
+      "candidates": [
+        "ORD002",
+        "ORD005",
+        "SUP009"
+      ],
+      "score": 0.6441016587344083,
+      "predicted_faq_id": "ORD002",
+      "top1_correct": false,
+      "top3_correct": true,
+      "correct": false
+    },
+    {
+      "dataset": "additional",
+      "query": "Can I follow a purchase as a guest?",
+      "expected_faq_id": "ORD006",
+      "valid_label": true,
+      "candidates": [
+        "DEL010",
+        "PAY009",
+        "ORD006"
+      ],
+      "score": 0.4640109862600054,
+      "predicted_faq_id": "DEL010",
+      "top1_correct": false,
+      "top3_correct": true,
+      "correct": false
+    },
+    {
+      "dataset": "additional",
+      "query": "I checked out without signing in. How can I track it?",
+      "expected_faq_id": "ORD006",
+      "valid_label": true,
+      "candidates": [
+        "ORD001",
+        "ORD003",
+        "ORD006"
+      ],
+      "score": 0.5622161602973939,
+      "predicted_faq_id": "ORD001",
+      "top1_correct": false,
+      "top3_correct": true,
+      "correct": false
+    },
+    {
+      "dataset": "additional",
+      "query": "Where can I see the progress of my latest purchase?",
+      "expected_faq_id": "ORD007",
+      "valid_label": true,
+      "candidates": [
+        "ORD007",
+        "ORD010",
+        "REF003"
+      ],
+      "score": 0.688811001777649,
+      "predicted_faq_id": "ORD007",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "additional",
+      "query": "What does it mean when the seller has shipped my package?",
+      "expected_faq_id": "ORD008",
+      "valid_label": true,
+      "candidates": [
+        "ORD008",
+        "ORD005",
+        "ORD009"
+      ],
+      "score": 0.7372341080145403,
+      "predicted_faq_id": "ORD008",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "additional",
+      "query": "My order is with the courier and says out for delivery. What does that mean?",
+      "expected_faq_id": "ORD009",
+      "valid_label": true,
+      "candidates": [
+        "ORD009",
+        "ORD008",
+        "ORD005"
+      ],
+      "score": 0.7098774290084839,
+      "predicted_faq_id": "ORD009",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "additional",
+      "query": "Can you send me shipment progress notifications?",
+      "expected_faq_id": "ORD010",
+      "valid_label": true,
+      "candidates": [
+        "ORD010",
+        "DEL008",
+        "DEL006"
+      ],
+      "score": 0.6799481238637651,
+      "predicted_faq_id": "ORD010",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "additional",
+      "query": "What is the process for sending a purchase back?",
+      "expected_faq_id": "RET001",
+      "valid_label": true,
+      "candidates": [
+        "RET002",
+        "RET001",
+        "ORD007"
+      ],
+      "score": 0.5755389491717021,
+      "predicted_faq_id": "RET002",
+      "top1_correct": false,
+      "top3_correct": true,
+      "correct": false
+    },
+    {
+      "dataset": "additional",
+      "query": "I bought the wrong item and want to return it",
+      "expected_faq_id": "RET001",
+      "valid_label": true,
+      "candidates": [
+        "RET001",
+        "RET007",
+        "RET002"
+      ],
+      "score": 0.6332803058624268,
+      "predicted_faq_id": "RET001",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "additional",
+      "query": "How long after purchase can I send an item back?",
+      "expected_faq_id": "RET003",
+      "valid_label": true,
+      "candidates": [
+        "RET003",
+        "RET002",
+        "RET007"
+      ],
+      "score": 0.7213293290138245,
+      "predicted_faq_id": "RET003",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "additional",
+      "query": "What is the return window for an order?",
+      "expected_faq_id": "RET003",
+      "valid_label": true,
+      "candidates": [
+        "RET003",
+        "ORD008",
+        "REF008"
+      ],
+      "score": 0.4537793755531311,
+      "predicted_faq_id": "RET003",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "additional",
+      "query": "Can I send back an item after opening the package?",
+      "expected_faq_id": "RET004",
+      "valid_label": true,
+      "candidates": [
+        "RET002",
+        "RET007",
+        "RET004"
+      ],
+      "score": 0.6794413304328919,
+      "predicted_faq_id": "RET002",
+      "top1_correct": false,
+      "top3_correct": true,
+      "correct": false
+    },
+    {
+      "dataset": "additional",
+      "query": "I opened the box already. Am I still allowed to return it?",
+      "expected_faq_id": "RET004",
+      "valid_label": true,
+      "candidates": [
+        "RET004",
+        "RET005",
+        "RET009"
+      ],
+      "score": 0.6535096558657559,
+      "predicted_faq_id": "RET004",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "additional",
+      "query": "Do I have to keep the box to return my purchase?",
+      "expected_faq_id": "RET005",
+      "valid_label": true,
+      "candidates": [
+        "RET005",
+        "RET002",
+        "RET003"
+      ],
+      "score": 0.6425980305671692,
+      "predicted_faq_id": "RET005",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "additional",
+      "query": "Is the original box required for a return?",
+      "expected_faq_id": "RET005",
+      "valid_label": true,
+      "candidates": [
+        "RET005",
+        "RET009",
+        "RET007"
+      ],
+      "score": 0.7980109453201294,
+      "predicted_faq_id": "RET005",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "additional",
+      "query": "Where can I download the shipping label for my return?",
+      "expected_faq_id": "RET006",
+      "valid_label": true,
+      "candidates": [
+        "RET006",
+        "RET005",
+        "RET001"
+      ],
+      "score": 0.5608994197845459,
+      "predicted_faq_id": "RET006",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "additional",
+      "query": "How can I print the label to send the product back?",
+      "expected_faq_id": "RET006",
+      "valid_label": true,
+      "candidates": [
+        "RET006",
+        "RET001",
+        "RET002"
+      ],
+      "score": 0.7157672619819642,
+      "predicted_faq_id": "RET006",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "additional",
+      "query": "Can I swap this item for a different one?",
+      "expected_faq_id": "RET007",
+      "valid_label": true,
+      "candidates": [
+        "RET007",
+        "DEL002",
+        "RET002"
+      ],
+      "score": 0.45078085660934447,
+      "predicted_faq_id": "RET007",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "additional",
+      "query": "My return was declined. How should I proceed?",
+      "expected_faq_id": "RET008",
+      "valid_label": true,
+      "candidates": [
+        "RET008",
+        "PAY002",
+        "RET001"
+      ],
+      "score": 0.7604666471481323,
+      "predicted_faq_id": "RET008",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "additional",
+      "query": "Can a present I received be returned?",
+      "expected_faq_id": "RET009",
+      "valid_label": true,
+      "candidates": [
+        "RET009",
+        "RET002",
+        "RET007"
+      ],
+      "score": 0.7878970691135951,
+      "predicted_faq_id": "RET009",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "additional",
+      "query": "How do I find out if this product qualifies for return?",
+      "expected_faq_id": "RET010",
+      "valid_label": true,
+      "candidates": [
+        "RET001",
+        "RET010",
+        "RET003"
+      ],
+      "score": 0.6531864328817888,
+      "predicted_faq_id": "RET001",
+      "top1_correct": false,
+      "top3_correct": true,
+      "correct": false
+    },
+    {
+      "dataset": "additional",
+      "query": "How much time does it usually take to receive a refund?",
+      "expected_faq_id": "REF001",
+      "valid_label": true,
+      "candidates": [
+        "REF001",
+        "RET003",
+        "REF003"
+      ],
+      "score": 0.8659917766397649,
+      "predicted_faq_id": "REF001",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "additional",
+      "query": "When should the refunded amount appear in my account?",
+      "expected_faq_id": "REF002",
+      "valid_label": true,
+      "candidates": [
+        "REF007",
+        "REF002",
+        "REF003"
+      ],
+      "score": 0.6160651167233785,
+      "predicted_faq_id": "REF007",
+      "top1_correct": false,
+      "top3_correct": true,
+      "correct": false
+    },
+    {
+      "dataset": "additional",
+      "query": "Where can I see the progress of my refund?",
+      "expected_faq_id": "REF003",
+      "valid_label": true,
+      "candidates": [
+        "REF003",
+        "REF004",
+        "REF001"
+      ],
+      "score": 0.8308597405751547,
+      "predicted_faq_id": "REF003",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "additional",
+      "query": "The refund was accepted but the amount has not arrived",
+      "expected_faq_id": "REF004",
+      "valid_label": true,
+      "candidates": [
+        "REF004",
+        "REF007",
+        "REF008"
+      ],
+      "score": 0.6985392610232035,
+      "predicted_faq_id": "REF004",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "additional",
+      "query": "Will the refund go back to the card I used?",
+      "expected_faq_id": "REF005",
+      "valid_label": true,
+      "candidates": [
+        "REF005",
+        "REF008",
+        "REF006"
+      ],
+      "score": 0.7000719944636027,
+      "predicted_faq_id": "REF005",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "additional",
+      "query": "Can I withdraw a refund request after submitting it?",
+      "expected_faq_id": "REF006",
+      "valid_label": true,
+      "candidates": [
+        "REF006",
+        "REF008",
+        "REF005"
+      ],
+      "score": 0.8035517533620199,
+      "predicted_faq_id": "REF006",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "additional",
+      "query": "Why did I receive less than the amount I paid?",
+      "expected_faq_id": "REF007",
+      "valid_label": true,
+      "candidates": [
+        "PAY002",
+        "REF007",
+        "ORD005"
+      ],
+      "score": 0.6298807422320049,
+      "predicted_faq_id": "PAY002",
+      "top1_correct": false,
+      "top3_correct": true,
+      "correct": false
+    },
+    {
+      "dataset": "additional",
+      "query": "If my order is cancelled, am I eligible for a refund?",
+      "expected_faq_id": "REF008",
+      "valid_label": true,
+      "candidates": [
+        "REF008",
+        "REF006",
+        "REF005"
+      ],
+      "score": 0.8491081779653376,
+      "predicted_faq_id": "REF008",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "additional",
+      "query": "My refund is taking longer than expected. What can I do?",
+      "expected_faq_id": "REF009",
+      "valid_label": true,
+      "candidates": [
+        "REF009",
+        "REF007",
+        "REF001"
+      ],
+      "score": 0.7152799422090703,
+      "predicted_faq_id": "REF009",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "additional",
+      "query": "Are delivery fees returned along with the product price?",
+      "expected_faq_id": "REF010",
+      "valid_label": true,
+      "candidates": [
+        "REF010",
+        "PAY005",
+        "DEL010"
+      ],
+      "score": 0.597767174243927,
+      "predicted_faq_id": "REF010",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "additional",
+      "query": "Which ways can I pay at checkout?",
+      "expected_faq_id": "PAY001",
+      "valid_label": true,
+      "candidates": [
+        "PAY001",
+        "PAY003",
+        "PAY004"
+      ],
+      "score": 0.7101873942783901,
+      "predicted_faq_id": "PAY001",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "additional",
+      "query": "My card payment did not go through. Why?",
+      "expected_faq_id": "PAY002",
+      "valid_label": true,
+      "candidates": [
+        "PAY002",
+        "PAY003",
+        "REF005"
+      ],
+      "score": 0.587272846698761,
+      "predicted_faq_id": "PAY002",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "additional",
+      "query": "Can I use Visa or another credit card?",
+      "expected_faq_id": "PAY003",
+      "valid_label": true,
+      "candidates": [
+        "PAY003",
+        "PAY004",
+        "PAY001"
+      ],
+      "score": 0.7230712294578552,
+      "predicted_faq_id": "PAY003",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "additional",
+      "query": "Is a bank debit card accepted for purchases?",
+      "expected_faq_id": "PAY004",
+      "valid_label": true,
+      "candidates": [
+        "PAY004",
+        "PAY003",
+        "PAY005"
+      ],
+      "score": 0.6916197776794434,
+      "predicted_faq_id": "PAY004",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "additional",
+      "query": "Can I pay when the package arrives?",
+      "expected_faq_id": "PAY005",
+      "valid_label": true,
+      "candidates": [
+        "DEL010",
+        "PAY005",
+        "DEL003"
+      ],
+      "score": 0.6068128670964922,
+      "predicted_faq_id": "DEL010",
+      "top1_correct": false,
+      "top3_correct": true,
+      "correct": false
+    },
+    {
+      "dataset": "additional",
+      "query": "The same purchase appears twice on my statement",
+      "expected_faq_id": "PAY006",
+      "valid_label": true,
+      "candidates": [
+        "PAY006",
+        "GEN005",
+        "ORD007"
+      ],
+      "score": 0.49842568039894103,
+      "predicted_faq_id": "PAY006",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "additional",
+      "query": "Where do I enter a discount voucher?",
+      "expected_faq_id": "PAY007",
+      "valid_label": true,
+      "candidates": [
+        "PAY007",
+        "GEN006",
+        "GEN002"
+      ],
+      "score": 0.5633463450840541,
+      "predicted_faq_id": "PAY007",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "additional",
+      "query": "My discount coupon keeps showing an error",
+      "expected_faq_id": "PAY008",
+      "valid_label": true,
+      "candidates": [
+        "PAY008",
+        "PAY007",
+        "ACC010"
+      ],
+      "score": 0.7143104399953569,
+      "predicted_faq_id": "PAY008",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "additional",
+      "query": "Can I switch the payment option after checkout?",
+      "expected_faq_id": "PAY009",
+      "valid_label": true,
+      "candidates": [
+        "PAY009",
+        "SEC007",
+        "DEL002"
+      ],
+      "score": 0.7299873352050781,
+      "predicted_faq_id": "PAY009",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "additional",
+      "query": "Is it safe to save my card details on this website?",
+      "expected_faq_id": "PAY010",
+      "valid_label": true,
+      "candidates": [
+        "PAY010",
+        "SEC001",
+        "PAY004"
+      ],
+      "score": 0.5084331295707009,
+      "predicted_faq_id": "PAY010",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "additional",
+      "query": "What steps do I follow to sign up?",
+      "expected_faq_id": "ACC001",
+      "valid_label": true,
+      "candidates": [
+        "ACC001",
+        "GEN001",
+        "ACC005"
+      ],
+      "score": 0.5441595077514648,
+      "predicted_faq_id": "ACC001",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "additional",
+      "query": "I can't remember my password and need a new one",
+      "expected_faq_id": "ACC002",
+      "valid_label": true,
+      "candidates": [
+        "ACC002",
+        "SEC003",
+        "ACC005"
+      ],
+      "score": 0.7531397266821428,
+      "predicted_faq_id": "ACC002",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "additional",
+      "query": "Where can I edit the email linked to my profile?",
+      "expected_faq_id": "ACC003",
+      "valid_label": true,
+      "candidates": [
+        "ACC003",
+        "SEC006",
+        "GEN004"
+      ],
+      "score": 0.5858779525756836,
+      "predicted_faq_id": "ACC003",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "additional",
+      "query": "My phone number has changed. How do I update it?",
+      "expected_faq_id": "ACC004",
+      "valid_label": true,
+      "candidates": [
+        "ACC004",
+        "ORD003",
+        "ACC003"
+      ],
+      "score": 0.9060571002960205,
+      "predicted_faq_id": "ACC004",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "additional",
+      "query": "My account login keeps failing",
+      "expected_faq_id": "ACC005",
+      "valid_label": true,
+      "candidates": [
+        "ACC005",
+        "ACC006",
+        "SEC002"
+      ],
+      "score": 0.717361924648285,
+      "predicted_faq_id": "ACC005",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "additional",
+      "query": "I want to permanently remove my user account",
+      "expected_faq_id": "ACC006",
+      "valid_label": true,
+      "candidates": [
+        "ACC006",
+        "SEC003",
+        "SEC001"
+      ],
+      "score": 0.7020840287208557,
+      "predicted_faq_id": "ACC006",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "additional",
+      "query": "How do I correct the address saved to my account?",
+      "expected_faq_id": "ACC007",
+      "valid_label": true,
+      "candidates": [
+        "ACC007",
+        "ACC003",
+        "ACC006"
+      ],
+      "score": 0.5482098579406738,
+      "predicted_faq_id": "ACC007",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "additional",
+      "query": "Can I save home and work addresses on my profile?",
+      "expected_faq_id": "ACC008",
+      "valid_label": true,
+      "candidates": [
+        "ACC008",
+        "DEL002",
+        "ACC007"
+      ],
+      "score": 0.36645600080490115,
+      "predicted_faq_id": null,
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": false
+    },
+    {
+      "dataset": "additional",
+      "query": "How can I stop getting marketing emails?",
+      "expected_faq_id": "ACC009",
+      "valid_label": true,
+      "candidates": [
+        "ACC009",
+        "SEC006",
+        "GEN003"
+      ],
+      "score": 0.6525635310581752,
+      "predicted_faq_id": "ACC009",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "additional",
+      "query": "The verification code never arrived in my inbox or phone",
+      "expected_faq_id": "ACC010",
+      "valid_label": true,
+      "candidates": [
+        "ACC010",
+        "SEC008",
+        "PAY008"
+      ],
+      "score": 0.7752364706993103,
+      "predicted_faq_id": "ACC010",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "additional",
+      "query": "What is the estimated shipping time for my purchase?",
+      "expected_faq_id": "DEL001",
+      "valid_label": true,
+      "candidates": [
+        "DEL001",
+        "DEL003",
+        "SUP002"
+      ],
+      "score": 0.583173394203186,
+      "predicted_faq_id": "DEL001",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "additional",
+      "query": "I entered the wrong shipping address. Can it be corrected?",
+      "expected_faq_id": "DEL002",
+      "valid_label": true,
+      "candidates": [
+        "ACC007",
+        "DEL002",
+        "DEL007"
+      ],
+      "score": 0.573711006641388,
+      "predicted_faq_id": "ACC007",
+      "top1_correct": false,
+      "top3_correct": true,
+      "correct": false
+    },
+    {
+      "dataset": "additional",
+      "query": "Can I schedule delivery for a specific hour?",
+      "expected_faq_id": "DEL003",
+      "valid_label": true,
+      "candidates": [
+        "DEL003",
+        "DEL007",
+        "DEL002"
+      ],
+      "score": 0.7418233275413513,
+      "predicted_faq_id": "DEL003",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "additional",
+      "query": "What happens if the courier comes when nobody is home?",
+      "expected_faq_id": "DEL004",
+      "valid_label": true,
+      "candidates": [
+        "DEL004",
+        "ORD008",
+        "DEL010"
+      ],
+      "score": 0.6082630133628846,
+      "predicted_faq_id": "DEL004",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "additional",
+      "query": "My package is arriving later than promised",
+      "expected_faq_id": "DEL005",
+      "valid_label": true,
+      "candidates": [
+        "ORD005",
+        "DEL005",
+        "DEL001"
+      ],
+      "score": 0.5759842855589731,
+      "predicted_faq_id": "ORD005",
+      "top1_correct": false,
+      "top3_correct": true,
+      "correct": false
+    },
+    {
+      "dataset": "additional",
+      "query": "How can I check whether delivery is available for my postcode?",
+      "expected_faq_id": "DEL006",
+      "valid_label": true,
+      "candidates": [
+        "ACC007",
+        "DEL008",
+        "ACC008"
+      ],
+      "score": 0.5071754677729173,
+      "predicted_faq_id": "ACC007",
+      "top1_correct": false,
+      "top3_correct": false,
+      "correct": false
+    },
+    {
+      "dataset": "additional",
+      "query": "Can I add a note for the delivery driver?",
+      "expected_faq_id": "DEL007",
+      "valid_label": true,
+      "candidates": [
+        "DEL007",
+        "DEL010",
+        "DEL008"
+      ],
+      "score": 0.5151094834009806,
+      "predicted_faq_id": "DEL007",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "additional",
+      "query": "Will the website alert me when my parcel is arriving?",
+      "expected_faq_id": "DEL008",
+      "valid_label": true,
+      "candidates": [
+        "DEL008",
+        "ORD002",
+        "ORD010"
+      ],
+      "score": 0.6688664102554321,
+      "predicted_faq_id": "DEL008",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "additional",
+      "query": "The delivery person could not complete the drop-off",
+      "expected_faq_id": "DEL009",
+      "valid_label": true,
+      "candidates": [
+        "DEL009",
+        "DEL004",
+        "ORD009"
+      ],
+      "score": 0.6139746189117432,
+      "predicted_faq_id": "DEL009",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "additional",
+      "query": "Can I pick up the order from a collection point instead?",
+      "expected_faq_id": "DEL010",
+      "valid_label": true,
+      "candidates": [
+        "DEL010",
+        "ORD006",
+        "ORD001"
+      ],
+      "score": 0.5336731000380083,
+      "predicted_faq_id": "DEL010",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "additional",
+      "query": "Where do I find the technical details for an item?",
+      "expected_faq_id": "PRD001",
+      "valid_label": true,
+      "candidates": [
+        "PRD001",
+        "SUP008",
+        "PRD003"
+      ],
+      "score": 0.6484394502639771,
+      "predicted_faq_id": "PRD001",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "additional",
+      "query": "Does this item come in a larger or smaller size?",
+      "expected_faq_id": "PRD002",
+      "valid_label": true,
+      "candidates": [
+        "PRD002",
+        "PRD007",
+        "ORD008"
+      ],
+      "score": 0.5415328574180603,
+      "predicted_faq_id": "PRD002",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "additional",
+      "query": "How do I know if a product is currently available?",
+      "expected_faq_id": "PRD003",
+      "valid_label": true,
+      "candidates": [
+        "PRD003",
+        "ORD007",
+        "GEN010"
+      ],
+      "score": 0.5716111493110657,
+      "predicted_faq_id": "PRD003",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "additional",
+      "query": "The product is sold out. Will it come back?",
+      "expected_faq_id": "PRD004",
+      "valid_label": true,
+      "candidates": [
+        "RET004",
+        "PRD004",
+        "RET001"
+      ],
+      "score": 0.5329350988070171,
+      "predicted_faq_id": "RET004",
+      "top1_correct": false,
+      "top3_correct": true,
+      "correct": false
+    },
+    {
+      "dataset": "additional",
+      "query": "Can I view two products side by side before buying?",
+      "expected_faq_id": "PRD005",
+      "valid_label": true,
+      "candidates": [
+        "PRD005",
+        "RET004",
+        "PRD009"
+      ],
+      "score": 0.36872740387916564,
+      "predicted_faq_id": null,
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": false
+    },
+    {
+      "dataset": "additional",
+      "query": "Is there a manufacturer's warranty with this item?",
+      "expected_faq_id": "PRD006",
+      "valid_label": true,
+      "candidates": [
+        "PRD006",
+        "PRD004",
+        "SUP008"
+      ],
+      "score": 0.7518422484397889,
+      "predicted_faq_id": "PRD006",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "additional",
+      "query": "What accessories are supplied with the product?",
+      "expected_faq_id": "PRD007",
+      "valid_label": true,
+      "candidates": [
+        "PRD007",
+        "PRD001",
+        "PRD006"
+      ],
+      "score": 0.7033666099820818,
+      "predicted_faq_id": "PRD007",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "additional",
+      "query": "How can I check whether this works with my phone?",
+      "expected_faq_id": "PRD008",
+      "valid_label": true,
+      "candidates": [
+        "PRD008",
+        "SUP004",
+        "RET010"
+      ],
+      "score": 0.5038009858131409,
+      "predicted_faq_id": "PRD008",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "additional",
+      "query": "Could someone help me choose the right product?",
+      "expected_faq_id": "PRD009",
+      "valid_label": true,
+      "candidates": [
+        "PRD009",
+        "PRD005",
+        "RET001"
+      ],
+      "score": 0.6454393029212951,
+      "predicted_faq_id": "PRD009",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "additional",
+      "query": "Do the photos show exactly what the item looks like?",
+      "expected_faq_id": "PRD010",
+      "valid_label": true,
+      "candidates": [
+        "PRD010",
+        "RET005",
+        "GEN005"
+      ],
+      "score": 0.37303268909454346,
+      "predicted_faq_id": null,
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": false
+    },
+    {
+      "dataset": "additional",
+      "query": "Where can I reach the customer care team?",
+      "expected_faq_id": "SUP001",
+      "valid_label": true,
+      "candidates": [
+        "SUP001",
+        "SUP010",
+        "SUP002"
+      ],
+      "score": 0.6534262537956238,
+      "predicted_faq_id": "SUP001",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "additional",
+      "query": "When is customer support available?",
+      "expected_faq_id": "SUP002",
+      "valid_label": true,
+      "candidates": [
+        "SUP001",
+        "SUP002",
+        "SUP006"
+      ],
+      "score": 0.6628656363487244,
+      "predicted_faq_id": "SUP001",
+      "top1_correct": false,
+      "top3_correct": true,
+      "correct": false
+    },
+    {
+      "dataset": "additional",
+      "query": "How do I submit a formal complaint?",
+      "expected_faq_id": "SUP003",
+      "valid_label": true,
+      "candidates": [
+        "SUP003",
+        "SUP001",
+        "SUP008"
+      ],
+      "score": 0.8447649989809308,
+      "predicted_faq_id": "SUP003",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "additional",
+      "query": "Where can I see updates on my help request?",
+      "expected_faq_id": "SUP004",
+      "valid_label": true,
+      "candidates": [
+        "SUP010",
+        "ORD010",
+        "SUP006"
+      ],
+      "score": 0.5621533135573069,
+      "predicted_faq_id": "SUP010",
+      "top1_correct": false,
+      "top3_correct": false,
+      "correct": false
+    },
+    {
+      "dataset": "additional",
+      "query": "I have been waiting for a response to my support case",
+      "expected_faq_id": "SUP005",
+      "valid_label": true,
+      "candidates": [
+        "SUP006",
+        "SUP001",
+        "SUP004"
+      ],
+      "score": 0.49331277229569176,
+      "predicted_faq_id": "SUP006",
+      "top1_correct": false,
+      "top3_correct": false,
+      "correct": false
+    },
+    {
+      "dataset": "additional",
+      "query": "What details should I provide in a support message?",
+      "expected_faq_id": "SUP006",
+      "valid_label": true,
+      "candidates": [
+        "SUP006",
+        "SUP001",
+        "SUP004"
+      ],
+      "score": 0.8099146525065104,
+      "predicted_faq_id": "SUP006",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "additional",
+      "query": "Can I talk to a real person instead of a bot?",
+      "expected_faq_id": "SUP007",
+      "valid_label": true,
+      "candidates": [
+        "SUP007",
+        "PAY004",
+        "DEL010"
+      ],
+      "score": 0.5921564674377442,
+      "predicted_faq_id": "SUP007",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "additional",
+      "query": "The item arrived broken. How do I report this?",
+      "expected_faq_id": "SUP008",
+      "valid_label": true,
+      "candidates": [
+        "SUP008",
+        "SUP009",
+        "GEN005"
+      ],
+      "score": 0.821239193280538,
+      "predicted_faq_id": "SUP008",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "additional",
+      "query": "One of the products is missing from my delivery",
+      "expected_faq_id": "SUP009",
+      "valid_label": true,
+      "candidates": [
+        "SUP009",
+        "ORD005",
+        "RET001"
+      ],
+      "score": 0.5386656244595845,
+      "predicted_faq_id": "SUP009",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "additional",
+      "query": "Where is the website's help section?",
+      "expected_faq_id": "SUP010",
+      "valid_label": true,
+      "candidates": [
+        "SUP010",
+        "GEN001",
+        "SUP006"
+      ],
+      "score": 0.6993773766926357,
+      "predicted_faq_id": "SUP010",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "additional",
+      "query": "What can I do to protect my profile from hackers?",
+      "expected_faq_id": "SEC001",
+      "valid_label": true,
+      "candidates": [
+        "SEC001",
+        "SEC002",
+        "ACC005"
+      ],
+      "score": 0.6479988527297974,
+      "predicted_faq_id": "SEC001",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "additional",
+      "query": "I think another person has signed in to my account",
+      "expected_faq_id": "SEC002",
+      "valid_label": true,
+      "candidates": [
+        "SEC002",
+        "ACC005",
+        "SEC008"
+      ],
+      "score": 0.586135311126709,
+      "predicted_faq_id": "SEC002",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "additional",
+      "query": "Where do I change my account password for security?",
+      "expected_faq_id": "SEC003",
+      "valid_label": true,
+      "candidates": [
+        "SEC003",
+        "ACC002",
+        "SEC001"
+      ],
+      "score": 0.7970743378003439,
+      "predicted_faq_id": "SEC003",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "additional",
+      "query": "Is it okay to tell a support employee my one-time code?",
+      "expected_faq_id": "SEC004",
+      "valid_label": true,
+      "candidates": [
+        "SEC004",
+        "SUP006",
+        "ACC010"
+      ],
+      "score": 0.5323923408985138,
+      "predicted_faq_id": "SEC004",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "additional",
+      "query": "Where can I manage the data privacy settings?",
+      "expected_faq_id": "SEC005",
+      "valid_label": true,
+      "candidates": [
+        "SEC005",
+        "GEN002",
+        "SEC001"
+      ],
+      "score": 0.575900936126709,
+      "predicted_faq_id": "SEC005",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "additional",
+      "query": "I received a suspicious message pretending to be the store",
+      "expected_faq_id": "SEC006",
+      "valid_label": true,
+      "candidates": [
+        "SEC006",
+        "GEN002",
+        "SEC002"
+      ],
+      "score": 0.46001590609550475,
+      "predicted_faq_id": "SEC006",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "additional",
+      "query": "How do I delete a card saved to my profile?",
+      "expected_faq_id": "SEC007",
+      "valid_label": true,
+      "candidates": [
+        "ACC006",
+        "SEC007",
+        "ACC002"
+      ],
+      "score": 0.5420882081985474,
+      "predicted_faq_id": "ACC006",
+      "top1_correct": false,
+      "top3_correct": true,
+      "correct": false
+    },
+    {
+      "dataset": "additional",
+      "query": "Why does the site need me to confirm who I am?",
+      "expected_faq_id": "SEC008",
+      "valid_label": true,
+      "candidates": [
+        "SEC008",
+        "ACC010",
+        "GEN001"
+      ],
+      "score": 0.6803354545073076,
+      "predicted_faq_id": "SEC008",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "additional",
+      "query": "I'm new here. How do I navigate the online store?",
+      "expected_faq_id": "GEN001",
+      "valid_label": true,
+      "candidates": [
+        "GEN001",
+        "GEN002",
+        "GEN010"
+      ],
+      "score": 0.4825901663303375,
+      "predicted_faq_id": "GEN001",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "additional",
+      "query": "Where are the rules and policies for shopping?",
+      "expected_faq_id": "GEN002",
+      "valid_label": true,
+      "candidates": [
+        "GEN002",
+        "GEN006",
+        "GEN008"
+      ],
+      "score": 0.6724282741546631,
+      "predicted_faq_id": "GEN002",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "additional",
+      "query": "How can I rate a product I purchased?",
+      "expected_faq_id": "GEN003",
+      "valid_label": true,
+      "candidates": [
+        "GEN008",
+        "PRD009",
+        "RET001"
+      ],
+      "score": 0.5621168204716274,
+      "predicted_faq_id": "GEN008",
+      "top1_correct": false,
+      "top3_correct": false,
+      "correct": false
+    },
+    {
+      "dataset": "additional",
+      "query": "Can I change a review that I already posted?",
+      "expected_faq_id": "GEN004",
+      "valid_label": true,
+      "candidates": [
+        "GEN004",
+        "PAY009",
+        "DEL002"
+      ],
+      "score": 0.7612902045249939,
+      "predicted_faq_id": "GEN004",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "additional",
+      "query": "The listing has wrong details. Where should I report it?",
+      "expected_faq_id": "GEN005",
+      "valid_label": true,
+      "candidates": [
+        "GEN005",
+        "SUP008",
+        "SUP009"
+      ],
+      "score": 0.7198650074005127,
+      "predicted_faq_id": "GEN005",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "additional",
+      "query": "Is there a new customer discount for my first purchase?",
+      "expected_faq_id": "GEN006",
+      "valid_label": true,
+      "candidates": [
+        "GEN006",
+        "ORD007",
+        "GEN008"
+      ],
+      "score": 0.7212362575531006,
+      "predicted_faq_id": "GEN006",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "additional",
+      "query": "Where can I find the latest deals and promotions?",
+      "expected_faq_id": "GEN007",
+      "valid_label": true,
+      "candidates": [
+        "GEN007",
+        "GEN002",
+        "ORD007"
+      ],
+      "score": 0.5728193243344625,
+      "predicted_faq_id": "GEN007",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "additional",
+      "query": "How do I share my experience with the store?",
+      "expected_faq_id": "GEN008",
+      "valid_label": true,
+      "candidates": [
+        "GEN008",
+        "GEN002",
+        "SUP001"
+      ],
+      "score": 0.6668786446253459,
+      "predicted_faq_id": "GEN008",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "additional",
+      "query": "Where can I read the full terms of use?",
+      "expected_faq_id": "GEN009",
+      "valid_label": true,
+      "candidates": [
+        "GEN009",
+        "GEN002",
+        "GEN001"
+      ],
+      "score": 0.4837800900141398,
+      "predicted_faq_id": "GEN009",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "additional",
+      "query": "Can I get alerts when new items are added?",
+      "expected_faq_id": "GEN010",
+      "valid_label": true,
+      "candidates": [
+        "GEN010",
+        "DEL008",
+        "ORD010"
+      ],
+      "score": 0.5911403775215149,
+      "predicted_faq_id": "GEN010",
+      "top1_correct": true,
+      "top3_correct": true,
+      "correct": true
+    },
+    {
+      "dataset": "unrelated",
+      "query": "What is the weather forecast for tomorrow?",
+      "expected_faq_id": null,
+      "valid_label": true,
+      "candidates": [
+        "SUP002",
+        "DEL005",
+        "ORD002"
+      ],
+      "score": 0.22436636814049313,
+      "predicted_faq_id": null,
+      "top1_correct": null,
+      "top3_correct": null,
+      "correct": true
+    },
+    {
+      "dataset": "unrelated",
+      "query": "Who won the football match last night?",
+      "expected_faq_id": null,
+      "valid_label": true,
+      "candidates": [
+        "PAY002",
+        "SUP005",
+        "REF004"
+      ],
+      "score": 0.18442925810813904,
+      "predicted_faq_id": null,
+      "top1_correct": null,
+      "top3_correct": null,
+      "correct": true
+    },
+    {
+      "dataset": "unrelated",
+      "query": "Can you explain quantum entanglement?",
+      "expected_faq_id": null,
+      "valid_label": true,
+      "candidates": [
+        "PAY004",
+        "ACC002",
+        "SUP007"
+      ],
+      "score": 0.18555214881896973,
+      "predicted_faq_id": null,
+      "top1_correct": null,
+      "top3_correct": null,
+      "correct": true
+    },
+    {
+      "dataset": "unrelated",
+      "query": "Write me a poem about the ocean",
+      "expected_faq_id": null,
+      "valid_label": true,
+      "candidates": [
+        "PRD007",
+        "SUP003",
+        "SEC003"
+      ],
+      "score": 0.14600643643311093,
+      "predicted_faq_id": null,
+      "top1_correct": null,
+      "top3_correct": null,
+      "correct": true
+    },
+    {
+      "dataset": "unrelated",
+      "query": "How do I apply for a passport?",
+      "expected_faq_id": null,
+      "valid_label": true,
+      "candidates": [
+        "ACC001",
+        "PAY007",
+        "ACC007"
+      ],
+      "score": 0.33510654057775224,
+      "predicted_faq_id": null,
+      "top1_correct": null,
+      "top3_correct": null,
+      "correct": true
+    },
+    {
+      "dataset": "unrelated",
+      "query": "What is the capital city of Japan?",
+      "expected_faq_id": null,
+      "valid_label": true,
+      "candidates": [
+        "PRD007",
+        "ORD002",
+        "DEL006"
+      ],
+      "score": 0.13497876014028276,
+      "predicted_faq_id": null,
+      "top1_correct": null,
+      "top3_correct": null,
+      "correct": true
+    },
+    {
+      "dataset": "unrelated",
+      "query": "Can you solve this calculus equation?",
+      "expected_faq_id": null,
+      "valid_label": true,
+      "candidates": [
+        "GEN009",
+        "RET002",
+        "DEL006"
+      ],
+      "score": 0.18874805569648742,
+      "predicted_faq_id": null,
+      "top1_correct": null,
+      "top3_correct": null,
+      "correct": true
+    },
+    {
+      "dataset": "unrelated",
+      "query": "Tell me a joke about programmers",
+      "expected_faq_id": null,
+      "valid_label": true,
+      "candidates": [
+        "ORD008",
+        "PRD006",
+        "SUP005"
+      ],
+      "score": 0.14050361514091492,
+      "predicted_faq_id": null,
+      "top1_correct": null,
+      "top3_correct": null,
+      "correct": true
+    },
+    {
+      "dataset": "unrelated",
+      "query": "How do I install Linux on my laptop?",
+      "expected_faq_id": null,
+      "valid_label": true,
+      "candidates": [
+        "SEC003",
+        "GEN001",
+        "PRD008"
+      ],
+      "score": 0.23842572867870332,
+      "predicted_faq_id": null,
+      "top1_correct": null,
+      "top3_correct": null,
+      "correct": true
+    },
+    {
+      "dataset": "unrelated",
+      "query": "What are the symptoms of seasonal allergies?",
+      "expected_faq_id": null,
+      "valid_label": true,
+      "candidates": [
+        "SUP002",
+        "PRD007",
+        "GEN009"
+      ],
+      "score": 0.21771699445588247,
+      "predicted_faq_id": null,
+      "top1_correct": null,
+      "top3_correct": null,
+      "correct": true
+    },
+    {
+      "dataset": "unrelated",
+      "query": "Can you recommend a movie to watch tonight?",
+      "expected_faq_id": null,
+      "valid_label": true,
+      "candidates": [
+        "DEL005",
+        "PAY004",
+        "DEL003"
+      ],
+      "score": 0.181888148188591,
+      "predicted_faq_id": null,
+      "top1_correct": null,
+      "top3_correct": null,
+      "correct": true
+    },
+    {
+      "dataset": "unrelated",
+      "query": "How far is the Moon from Earth?",
+      "expected_faq_id": null,
+      "valid_label": true,
+      "candidates": [
+        "DEL001",
+        "ORD002",
+        "PRD006"
+      ],
+      "score": 0.18772180506161282,
+      "predicted_faq_id": null,
+      "top1_correct": null,
+      "top3_correct": null,
+      "correct": true
+    },
+    {
+      "dataset": "unrelated",
+      "query": "What is the current exchange rate?",
+      "expected_faq_id": null,
+      "valid_label": true,
+      "candidates": [
+        "GEN007",
+        "PAY005",
+        "PRD003"
+      ],
+      "score": 0.32733639478683474,
+      "predicted_faq_id": null,
+      "top1_correct": null,
+      "top3_correct": null,
+      "correct": true
+    },
+    {
+      "dataset": "unrelated",
+      "query": "Help me prepare for a Java interview",
+      "expected_faq_id": null,
+      "valid_label": true,
+      "candidates": [
+        "GEN008",
+        "PRD009",
+        "PRD007"
+      ],
+      "score": 0.18166135251522064,
+      "predicted_faq_id": null,
+      "top1_correct": null,
+      "top3_correct": null,
+      "correct": true
+    },
+    {
+      "dataset": "unrelated",
+      "query": "Who is the president of France?",
+      "expected_faq_id": null,
+      "valid_label": true,
+      "candidates": [
+        "PRD006",
+        "ACC003",
+        "PRD007"
+      ],
+      "score": 0.12904542088508605,
+      "predicted_faq_id": null,
+      "top1_correct": null,
+      "top3_correct": null,
+      "correct": true
+    },
+    {
+      "dataset": "unrelated",
+      "query": "Explain how solar panels generate electricity",
+      "expected_faq_id": null,
+      "valid_label": true,
+      "candidates": [
+        "ACC001",
+        "GEN001",
+        "PRD007"
+      ],
+      "score": 0.18760725259780883,
+      "predicted_faq_id": null,
+      "top1_correct": null,
+      "top3_correct": null,
+      "correct": true
+    },
+    {
+      "dataset": "unrelated",
+      "query": "What time does the local train leave?",
+      "expected_faq_id": null,
+      "valid_label": true,
+      "candidates": [
+        "SUP002",
+        "DEL003",
+        "DEL004"
+      ],
+      "score": 0.31516908236912317,
+      "predicted_faq_id": null,
+      "top1_correct": null,
+      "top3_correct": null,
+      "correct": true
+    },
+    {
+      "dataset": "unrelated",
+      "query": "Can you create a workout routine for me?",
+      "expected_faq_id": null,
+      "valid_label": true,
+      "candidates": [
+        "GEN004",
+        "ACC001",
+        "DEL007"
+      ],
+      "score": 0.1459376871585846,
+      "predicted_faq_id": null,
+      "top1_correct": null,
+      "top3_correct": null,
+      "correct": true
+    },
+    {
+      "dataset": "unrelated",
+      "query": "How do I bake a chocolate cake?",
+      "expected_faq_id": null,
+      "valid_label": true,
+      "candidates": [
+        "ACC001",
+        "GEN001",
+        "PAY004"
+      ],
+      "score": 0.21724588062082018,
+      "predicted_faq_id": null,
+      "top1_correct": null,
+      "top3_correct": null,
+      "correct": true
+    },
+    {
+      "dataset": "unrelated",
+      "query": "What is the difference between TCP and UDP?",
+      "expected_faq_id": null,
+      "valid_label": true,
+      "candidates": [
+        "ORD008",
+        "PRD005",
+        "ORD009"
+      ],
+      "score": 0.15909916460514067,
+      "predicted_faq_id": null,
+      "top1_correct": null,
+      "top3_correct": null,
+      "correct": true
+    }
+  ],
+  "threshold_sweep": [
+    {
+      "threshold": 0.2,
+      "correct_match_rate": 0.8,
+      "rejection_rate": 0.65
+    },
+    {
+      "threshold": 0.25,
+      "correct_match_rate": 0.8,
+      "rejection_rate": 0.85
+    },
+    {
+      "threshold": 0.3,
+      "correct_match_rate": 0.8,
+      "rejection_rate": 0.85
+    },
+    {
+      "threshold": 0.35,
+      "correct_match_rate": 0.8,
+      "rejection_rate": 1.0
+    },
+    {
+      "threshold": 0.4,
+      "correct_match_rate": 0.776,
+      "rejection_rate": 1.0
+    },
+    {
+      "threshold": 0.45,
+      "correct_match_rate": 0.776,
+      "rejection_rate": 1.0
+    },
+    {
+      "threshold": 0.5,
+      "correct_match_rate": 0.728,
+      "rejection_rate": 1.0
+    },
+    {
+      "threshold": 0.55,
+      "correct_match_rate": 0.656,
+      "rejection_rate": 1.0
+    },
+    {
+      "threshold": 0.6,
+      "correct_match_rate": 0.544,
+      "rejection_rate": 1.0
+    },
+    {
+      "threshold": 0.65,
+      "correct_match_rate": 0.456,
+      "rejection_rate": 1.0
+    },
+    {
+      "threshold": 0.7,
+      "correct_match_rate": 0.328,
+      "rejection_rate": 1.0
+    },
+    {
+      "threshold": 0.75,
+      "correct_match_rate": 0.184,
+      "rejection_rate": 1.0
+    },
+    {
+      "threshold": 0.8,
+      "correct_match_rate": 0.104,
+      "rejection_rate": 1.0
+    }
+  ],
+  "duplicate_query_rows": 0,
+  "test_sha256": {
+    "semantic_faq_test_queries.csv": "d40734e9fd5cb92626de0c7765441bab1496424ec1f25acd35d2ad1a20af46ee",
+    "semantic_faq_additional_test_queries.csv": "88dd09a1327e7d5de0d7d78be56ceb13faccf0e4397b9a869e3ef7f66fb89720",
+    "semantic_faq_no_match_test_queries.csv": "e312a0de5bf6ed58d65bae534d82f0fa2d5660088b32d1321a63425a5e092b4c"
+  }
+}
