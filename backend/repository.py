@@ -5,7 +5,6 @@ from typing import Protocol
 import pandas as pd
 from pydantic import BaseModel, ConfigDict
 
-
 class FAQ(BaseModel):
     model_config = ConfigDict(frozen=True)
     faq_id: str
