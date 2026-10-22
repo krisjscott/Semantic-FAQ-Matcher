@@ -8,7 +8,7 @@ from threading import Lock
 
 import pandas as pd
 
-from matcher import FAQMatcher, MODEL_NAME
+from .matcher import FAQMatcher, MODEL_NAME
 
 TEST_FILES = {
     'original': ('Original queries', 'semantic_faq_test_queries.csv', True),
